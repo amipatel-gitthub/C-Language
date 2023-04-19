@@ -1,0 +1,46 @@
+#include<stdio.h>
+#define n 5
+
+
+int min(int a[])
+{
+	int i,min;
+	for(i=0; i<n; i++)
+	{
+		printf("\n a[%d] : %d ",i,a[i]);
+		
+		if(min>a[i])
+		{
+			min = a[i];
+		}
+	}
+	printf("\n\t minimum value : %d ",min);
+}
+
+int max(int a[])
+{
+	int i,max;
+	for(i=0; i<n; i++)
+	{
+		if(max<a[i])
+		{
+			max = a[i];
+		}
+	}
+	printf("\n\t maximum value : %d ",max);
+	
+}
+
+int main()
+{
+	int a[n],i;
+	
+	for(i=0; i<n; i++)
+	{
+		printf("enter a[%d] : ",i);
+		scanf("%d",&a[i]);
+	}
+	
+	min(a);
+	max(a);
+}

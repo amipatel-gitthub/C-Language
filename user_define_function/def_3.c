@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+int main()
+{
+	int rupee[]={2000,500,200,100,50,20,10,5,2,1};
+	
+	int amt,i,a,b=0;
+	
+	printf("Enter amount : ");
+	scanf("%d",&amt);
+	
+
+	
+	for(i=0; i<10; i++)
+	{
+		if(amt >= rupee[i])
+		{	
+			//printf("\n\t %d : %d",rupee[i],amt/rupee[i]);
+		
+			//amt=amt%rupee[i];
+			
+			a=amt/rupee[i];
+			b=b + a;
+			printf(" \n %d : %d ",rupee[i],b);
+			amt=amt % rupee[i];
+			b = b-a;
+		}
+		
+		
+	}
+	
+}

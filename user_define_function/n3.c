@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+						//# with argument, no return value
+						
+int demo(int, int);
+
+int main()
+{
+	int x,y;
+	
+	printf("Enter X : ");
+	scanf("%d",&x);
+	
+	printf("\nEnter Y : ");
+	scanf("%d",&y);
+	
+	demo(x,y);
+}
+
+int demo(int x, int y)
+{
+	int new;
+	new = x*y;
+	printf("Total %d",new);
+}

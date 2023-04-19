@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+int fib(int n)
+{
+	//int b;
+	int b;
+	if (b==1)
+		return 1;
+	
+	else
+		return fib(b);
+}
+
+int main()
+{
+	int i,n,f,a=0,c;
+	
+	printf("Enter number : ");
+	scanf("%d",&n);
+
+	for(i=1; i<=n; i++)
+	{
+		fib(b);
+		
+		c=a+b;
+		printf(" %d ",c);
+		
+		a = b;
+		b = c;
+	
+	}
+
+}

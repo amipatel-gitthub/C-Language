@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int demo()
+{
+	int len,br,rect;
+	
+	printf("enter length : ");
+	scanf("%d",&len);
+	
+	printf("enter br : ");
+	scanf("%d",&br);
+	
+	rect = len * br;
+	printf("rectangle is : %d",rect);
+}
+
+int main()
+{
+	demo();
+}

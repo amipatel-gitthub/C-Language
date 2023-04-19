@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main()
+{
+	char a[10];
+	printf("Enter string : ");
+	
+	gets(a);
+	
+	printf("Your string is %s ",a);
+	
+
+}

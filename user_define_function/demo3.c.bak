@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int demo()
+{
+	int a,b;
+	
+	printf("Enter A : ");
+	scanf("%d",&a);
+	
+	printf("Enter B : ");
+	scanf("%d",&b);
+	
+	return a+b;
+}
+
+int main()
+{
+	int sum;
+	sum = demo();
+	printf(" Sum is : %d ",sum);
+}
